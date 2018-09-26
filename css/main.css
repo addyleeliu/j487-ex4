@@ -1,0 +1,78 @@
+body {
+  padding: 4%;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.95em;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+#offscreen-nav ul {
+  list-style-type: none;
+  font-size: 2em;
+  padding: 4.4%;
+}
+
+#offscreen-nav {
+  background: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  overflow: hidden;
+}
+
+#close-btn {
+  position: relative;
+  z-index: 99;
+  float: right;
+}
+
+#more-info {
+  color: red;
+}
+
+#more-info #tooltip {
+  width: 100px;
+  height: 35px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 15px 0;
+  z-index: 1;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -60px;
+}
+
+#more-info #tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+#tooltip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width:150px;
+  height:150px;
+  border: 1px solid;
+  box-shadow: 2px 2px 2px 2px gray;
+  position: absolute;
+  top:0;
+  right:0;
+  opacity:0;
+}
+
+#roommates {
+  font-size: 1.25em;
+}
